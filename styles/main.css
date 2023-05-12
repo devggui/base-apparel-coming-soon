@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+
+  /* ### Neutral */
+
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+  /* ### Gradients */
+  --Grad-1-from: hsl(0, 0%, 100%);
+  --Grad-1-to: hsl(0, 100%, 98%);
+  
+  --Grad-2-from: hsl(0, 80%, 86%);
+  --Grad-2-to: hsl(0, 74%, 74%);
+  
+  --Gradient-2: linear-gradient(135deg, , );
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}

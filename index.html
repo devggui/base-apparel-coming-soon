@@ -11,14 +11,29 @@
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
-<body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+<body class="w-screen h-full flex flex-col items-center justify-center">
+  <header class="md:absolute md:top-0 left-0 max-w-[374px] md:max-w-5xl w-full flex items-start justify-start p-10 md:px-20">
+    <img class="w-max h-6" src="./images/logo.svg" alt="">
+  </header>
+  <main class="flex flex-col md:flex-row-reverse">
+    
+    <img class="block md:hidden w-full max-w-[23.5rem]" src="./images/hero-mobile.jpg" alt="">
+    <img class="hidden md:block w-full h-screen" src="./images/hero-desktop.jpg" alt="">
+    
+    <div class="max-w-[23.5rem] md:max-w-2xl flex flex-col items-center justify-center text-center md:text-left p-10 md:px-20">    
+      <div class="flex flex-col items-center justify-center md:items-start md:justify-start md:text-left">
+        <span class="font-light text-4xl text-[var(--Desaturated-Red)] tracking-[0.3em]">WE'RE</span>
+        <h1 class="font-bold text-4xl tracking-[0.3em] text-[var(--Dark-Grayish-Red)]"> COMING SOON</h1>    
+        <p class="text-normal text-sm text-[var(--Desaturated-Red)] pt-5">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>    
+      </div>
+      <div class="w-full flex flex-row items-center justify-center mt-8 relative">
+        <input class="w-full border-[1px] border-solid border-[var(--Desaturated-Red)] py-3 pl-6 pr-20 rounded-full placeholder:text-[var(--Desaturated-Red)] placeholder:opacity-50" type="email" placeholder="Email Address">    
+        <span class="hidden absolute right-20" id="errorIcon"><img src="./images/icon-error.svg" alt=""></span>
+        <button class="absolute right-0 h-full rounded-full px-7 py-3 bg-gradient-to-r from-[var(--Grad-2-from)] to-[var(--Grad-2-to)] shadow-lg shadow-[var(--Grad-2-from)]"><img src="./images/icon-arrow.svg" alt=""></button>
+        <span class="hidden -bottom-7 left-7 absolute text-sm text-[var(--Soft-Red)] mt-2 text-left" id="errorMessage">Please provide a valid email</span>    
+      </div>
+    </div>
+  </main>
   
 </body>
 </html>
